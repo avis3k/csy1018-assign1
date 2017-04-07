@@ -4,45 +4,47 @@
 
 
 body{font-size:17.8px ;font-family:helvetica; margin :0;background: linear-gradient(slateblue,white,slateblue)}
-h1,h2,h3,h4,h5,h6,p,ul{margin:0;padding:0;}
-li{list-style:none;}
-a{text-decoration:none;}
-header {background: linear-gradient(indigo,#111);
-        text-align: center ;
+ /* declaring size of font , font , margin colour of whole body part*/
+
+h1,h2,h3,h4,h5,h6,p,ul{margin:0;padding:0;} /*declaring padding and margin from all 4 sides for all texts , unordered lists and paragraphs. */
+li{list-style:none}    /* if we want bullets , numberings ,etc inside li then this code is used but in this case it is set to none*/
+a{text-decoration:none;} /*decorates the text like underlining , drawing lines through letters ,etc */
+header {background: linear-gradient(indigo,#111); /* styling header part */
+        text-align: center ; /* centering text inside header*/
        padding: 0%;
-       color : white ;
+       color : white ; /* coloring text colour as white inside header*/
        margin-top: 3% ;
         margin-bottom: 0%;
          margin-left: 5%;
           margin-right: 5%;
-          border-radius: 15px ;
+          border-radius: 15px ; /* editing vertex of rectangular div*/
            height : 120px;
            text-align: center;
            padding-top: 2%}
 
-.photo img {width : 7% ;
+.photo img {width : 7% ;  /*styling image inside div called photo */
    height : 7% ;
     border-radius: 55px ;
     display: flex;
-    flex-direction: row;
+    flex-direction: row;/*li inside ul are arranged in horizontal order */
     padding-left: 2%;
     padding-bottom: 1%;}
 
-.photo img:hover{transform: rotate(360deg);
+.photo img:hover{transform: rotate(360deg);    /* styling image inside a div called photo which rotates on hover*/
   -webkit-transition: width .9s, height .9s,
   -webkit-transform .9s;transition: width .9s, height .9s, transform 1s;}
 
 .menu{background:white;margin-left: 13.5%; margin-right: 5% ; border-radius: 15px;margin-top: 0.5%;}
-.menu ul{display: flex;flex-direction: row;}
+.menu ul{display: flex;flex-direction: row;}/*ul inside a div called menu is shown in vertical order */
 .menu ul li{margin: 1%;background:white ;flex-grow: 0;padding: 10px}
 .menu ul li a{color: black;padding: 10px}
 .menu ul li:hover a{color: white;}
-.menu ul li:hover{background:black ;border-radius: 10px;}
-.menu .active {background-color: black;border-radius: 10px;color:white;}
+.menu ul li:hover{background:black ;border-radius: 10px;} /* styling navigation bar on hover*/
+.menu .active {background-color: black;border-radius: 10px;color:white;} /*styling content inside menu , showing the active page */
 
 
 
-section{height : 500px ;color: white; display: flex ; flex-direction: row;}
+section{height : 500px ;color: white; display: flex ; flex-direction: row;} /* declaring height , color and flex properties inside section*/
 
   .hellow {width: 90%;
     border-radius: 15px ;
@@ -59,19 +61,19 @@ section{height : 500px ;color: white; display: flex ; flex-direction: row;}
 
   .animate{ height : 20%;
             width:10%;
-            animation-duration: 4s;
+            animation-duration: 4s;/* declaring time period of animation of a div*/
             animation-name: animate;
-            animation-iteration-count:infinite;
+            animation-iteration-count:infinite; /* the animation never stops  */
             color: white;
-            position: absolute;
-            top: 300px;right: 300px}
+            position:absolute; /*positioning a div anywhere in page in this case it's 300px from top and 300px from right */
+            top: 300px;right: 300px} /*setting position of a div  */
 
   .animate img {width:200px ; height :300px}
 
    @keyframes animate {
         from{transform:translateY(0px);}
         to{transform: translateY(300px);}
-      }
+      }  /* declaring initial and final position of animating div*/
 
 .texts {font: times;
    font-size: 20px;
@@ -80,19 +82,19 @@ section{height : 500px ;color: white; display: flex ; flex-direction: row;}
    margin-top: 35%;
    margin-left: 1.5%;
    border-radius: 20px;
-   box-shadow: 10px 10px 10px white;}
+   box-shadow: 10px 10px 10px white;} /*putting box shadow in outermost part of a div */
 
 .texts:hover{transform: rotate(-11deg);
   -webkit-transition: width 1.9s, height 1.9s,-webkit-transform 1.9s;
-   transition: width 1.9s, height 1.9s, transform 2s;}
+   transition: width 1.9s, height 1.9s, transform 2s;} /*rotating a div by little angle of -11deg */
 
 
 footer {background: linear-gradient(indigo,#111);
-   display : flex ; flex-flow:row-reverse wrap;
+   display : flex ; flex-flow:row-reverse wrap; /*arraging in items in row but in reverse order */
     padding: 2%;
     color : white ;
     margin-bottom: 3%;
-    justify-content: space-around ;
+    justify-content:space-between ;  /* positioning and spacing between lines */
      border-radius: 15px;
      margin-left: 5%;
      margin-right: 5%;
@@ -104,17 +106,17 @@ footer {background: linear-gradient(indigo,#111);
    .two img {height : 50px ;display: inline;}
    .two ul li:hover{transform: rotate(360deg);
      -webkit-transition: width 1.9s, height 1.9s,-webkit-transform 1.9s;
-      transition: width 1.9s, height 1.9s, transform 2s;}
+      transition: width 1.9s, height 1.9s, transform 2s;} /*spining images inside div , ul and li by 360deg */
 
     .main1 {width: 40%;
       border-radius: 15px ;
       height: 120%;
       margin-left: 5%;
       margin-top: 0.5%;
-        background-image:url("../images/pic.gif"), url("../images/aaa.jpg") ;
-        background-repeat: no-repeat,no-repeat;
-        background-size: 30%,cover;
-        background-position: top center;}
+        background-image:url("../images/pic.gif"), url("../images/aaa.jpg") ; /* adding a picture on another picture as 2nd picture will be a background*/
+        background-repeat: no-repeat,no-repeat; /*declaring that two pictures do not repeat on any condition */
+        background-size: 30%,cover; /* declaring the size of picture , one by 30% and other cover whole div*/
+        background-position: top center;} /*positioning 1st picture and leaving 2nd picture as it is */
 
       .main1text {color: black;
         margin-top: 150px;
@@ -125,7 +127,7 @@ footer {background: linear-gradient(indigo,#111);
         height:45%;}
 
 
-    .main2 {background: linear-gradient(white,indigo);
+    .main2 {background: linear-gradient(white,indigo);/* mixing 2 colors as gradients to look more attractive*/
       width:60%;
       border-radius: 15px ;
       height: 120%;
@@ -133,7 +135,7 @@ footer {background: linear-gradient(indigo,#111);
       margin-top: 0.5%;
       margin-right: 5%;
       display: flex;
-      flex-direction: column;}
+      flex-direction: column;} /*arranging items to look vertical */
 
     .cv1{background: linear-gradient(indigo,black);
       font-style: italic;
@@ -244,8 +246,9 @@ footer {background: linear-gradient(indigo,#111);
             transform: scale(2.1);
           }
 
-      input[type=text] {
-      width: 29%;
+      input[type=text] /*styling a form of text type ,where user may enter some texts */
+
+      {width: 29%;
       padding: 5px;
       margin: 7px;
       box-sizing:border-box;
@@ -255,7 +258,7 @@ footer {background: linear-gradient(indigo,#111);
       background-color: black;
       color: white;
     -webkit-transition: width 0.23s ease-in-out;
-     transition: width 0.23s ease-in-out;
+     transition: width 0.23s ease-in-out;  /*stretching the box on click for 0.23 seconds */
      }
 
   input[type=text]:focus {
@@ -328,7 +331,7 @@ fieldset {width: 500px;
    border-radius: 50px 190px 70px 50px;
    border-color: white;}
 
-@media all and (max-width : 601px)
+@media all and (max-width : 601px) /*making the page responsive and in mobile view when width becomes 601px */
 {
 body{font-size: 10px;}
 header{height: auto;width: auto;}
