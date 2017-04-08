@@ -92,7 +92,7 @@ footer {background: linear-gradient(indigo,#111);
     padding: 2%;
     color : white ;
     margin-bottom: 3%;
-    justify-content:space-around; ;  /* positioning and no spacing between lines */
+    justify-content:space-around;  /* positioning and no spacing between lines */
      border-radius: 15px;
      margin-left: 5%;
      margin-right: 5%;
